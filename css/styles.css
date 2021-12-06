@@ -1,0 +1,56 @@
+*{
+   margin: 0;
+   padding: 0;
+   border: 0; 
+}
+@font-face {
+    font-family: beautyswing;
+    src: url(../fonts/beautyswing.otf);
+  }
+h1{
+    font-family: beautyswing, sans-serif;
+}
+p{
+    font-family: commuters-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+/*
+========
+
+Header Styling
+
+========
+*/
+header {
+    background: #b00c19;
+}
+.logo {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 0;
+}
+header nav {
+    width: 65%;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    position: relative;
+    top: 10px;
+}
+
+header nav li {
+    display: inline-block;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: .3s;
+    font-family: commuters-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+   
