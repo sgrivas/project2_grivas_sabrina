@@ -83,10 +83,10 @@
                 <div class="slide">
                     <img src="images/test1-slide.png" alt="Kiara Quote">
                     <div class="text-content">
-                        <h2>This is my headline</h2>
+                        <h2>‘’</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eos quos minus dolore neque, accusamus, praesentium unde magnam porro animi nesciunt, saepe architecto fuga consequuntur facilis excepturi amet voluptates non.</p>
-
-                        <p>Learn More at <a href="https://ufl.edu" target="_blank">University of Florida</a></p>
+                        <h3>Kiara</h3>
+                        <p>2018 Attendee</p>
                     </div>
                 </div>
 
@@ -94,10 +94,10 @@
                 <div class="slide">
                     <img src="images/test2-slide.png" alt="Martin Quote">
                     <div class="text-content bottom">
-                        <h2>This is my headline</h2>
+                        <h2>‘’</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eos quos minus dolore neque, accusamus, praesentium unde magnam porro animi nesciunt, saepe architecto fuga consequuntur facilis excepturi amet voluptates non.</p>
-
-                        <p>Learn More at <a href="https://ufl.edu" target="_blank">University of Florida</a></p>
+                        <h3>Martin</h3>
+                        <p>2020 Attendee</p>
                     </div>
                 </div>
 
@@ -105,22 +105,53 @@
                 <div class="slide">
                     <img src="images/test3-slide.png" alt="Riley Quote">
                     <div class="text-content bottom">
-                        <h2>This is my headline</h2>
+                        <h2>‘’</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eos quos minus dolore neque, accusamus, praesentium unde magnam porro animi nesciunt, saepe architecto fuga consequuntur facilis excepturi amet voluptates non.</p>
-
-                        <p>Learn More at <a href="https://ufl.edu" target="_blank">University of Florida</a></p>
+                        <h3>Riley</h3>
+                        <p>2015 Attendee</p>
                     </div>
                 </div>
               </div>
         </section>
 
-        <section class="section-break"></section>
-        <div class="cta-card">
-            <h2>Join Us</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore dolores dolorem consequatur enim, voluptatibus sint placeat autem totam, sequi minima excepturi blanditiis temporibus omnis impedit quidem aperiam neque! Eaque, quas.</p>
-            <a class="reserve-button" href="reserve.html">Reserve</a>
-        </div>
+        <section class="section-break">
+            <div class="cta-card">
+                <h2>Join Us</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore dolores dolorem consequatur enim, voluptatibus sint placeat autem totam, sequi minima excepturi blanditiis temporibus omnis impedit quidem aperiam neque! Eaque, quas.</p>
+                <a class="reserve-button" href="reserve.html">Reserve</a>
+            </div>
+        </section> 
     </main>
+    
+    <footer>
+        <section class="topleftfooter">
+            <h2>Tranquillum</h2>
+        </section>
+        <section class="toprightfooter">
+            <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)"> <!--Taken from index in form pross folder-->
+                <div class="email input-section">
+                    <label for="email" class="label_input_wrap">Email:</label>
+                    <input type="email" name="req_email" id="email" placeholder="email@email.com"/>
+                </div>
+                <div class="submit input-section">
+                    <input type="submit" value="Sign Up"/>
+                </div>
+            </form>
+            </section>
+        <section class="bottomleftfooter">
+            <a href="facebook.com"><img src="images/fblogo.png" alt="Facebook"></a>
+            <a href="twitter.com"><img src="images/tlogo.png" alt="Twitter"></a>
+            <a href="instagram.com"><img src="images/iglogo.png" alt="Instagram"></a>
+        </section>
+        <section class="bottomrightfooter">
+            <p>Tranquillum<br>1234 Retreat Way<br>Northern, CA 90401<br>808-555-1224</p>
+        </section>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
     <!-- jQuery Library -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -130,24 +161,5 @@
 
     <!-- Custom Script File -->
     <script type="text/javascript" src="js/scripts.js"></script>
-    
-    <footer>
-        <section>
-            <h2>Tranquillum</h2>
-
-        </section>
-        <section>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-        </section>
-        <section>
-            <p>Tranquillum<br>1234 Retreat Way<br>Northern, CA 90401<br>808-555-1224</p>
-        </section>
-    </footer>
-
-    <!-- Nav Script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
 </body>
 </html>

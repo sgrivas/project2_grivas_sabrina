@@ -24,7 +24,7 @@ h2{
 /*
 ========
 
-Header Styling
+Nav Styling
 
 ========
 */
@@ -215,6 +215,9 @@ Section Break Styling
     background-position: center; 
     background-size: cover;
     margin: 50px 0px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 250px;
 }
 /*
 ========
@@ -226,12 +229,12 @@ CTA Card Styling
 .cta-card{
     max-width: 700px;
     text-align: center;
-    margin: 50px auto;
+    margin: 0 auto;
     background: #d4aa7a;
     padding: 60px 60px;
     position: relative;
-    top: -300px;
     z-index: 79;
+    bottom: -280px;
 }
 .reserve-button{
     background: #16160a;
@@ -247,8 +250,34 @@ CTA Card Styling
     transition: .3s;
     color: #16160a;
 }
+/*
+========
+
+Footer Styling
+
+========
+*/
 footer{
     bottom: 0;
     width: 100%;
-    background-color: tomato;
+    background-color: #16160a;
+    color: white;
+}
+footer h2{
+    font-size: 20px;
+}
+footer p{
+    font-size: 14px;
+}
+.topleftfooter{
+    width: 30%;
+    display: inline-block;
+}
+.toprightfooter{
+    width: 65%;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    position: relative;
+    top: 10px;
 }
