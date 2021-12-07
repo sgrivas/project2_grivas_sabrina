@@ -85,7 +85,6 @@ Hero Image Styling
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
-    background-attachment: fixed;
 }
 h1{
     text-align: left;
@@ -192,4 +191,41 @@ section.slider {
     width: 50%;
     margin: 0 auto;
     padding: 50px;
+}
+/*
+========
+
+Section Break Styling
+
+========
+*/
+.section-break{
+    background-image: url("../images/joinus-home.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+/*
+========
+
+CTA Card Styling
+
+========
+*/
+.cta-card{
+    max-width: 700px;
+    text-align: center;
+    margin: 50px auto;
+    background: #d4aa7a;
+    padding: 80px 60px;
+}
+.reserve-button{
+    background: #16160a;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px 0px;
+    color: white;
+    transition: .3s;
 }
