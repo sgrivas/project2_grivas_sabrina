@@ -154,3 +154,42 @@ Half Styling
     color: white;
     transition: .3s;
 }
+/*
+========
+
+Slider Styling
+
+========
+*/
+.slick-prev:before, 
+.slick-next:before {
+    color: #333;
+}
+.slide {
+    position: relative;
+}
+
+.text-content {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    width: 50%;
+    background: white;
+    padding: 30px;
+}
+.text-content.bottom {
+    bottom: 60px;
+    top: initial;
+}
+section.slider {
+    position: relative;
+}
+.text-overlay {
+    position: absolute;
+    bottom: 20px;
+    background: white;
+    left: 30px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px;
+}
