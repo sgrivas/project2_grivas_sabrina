@@ -12,7 +12,8 @@ h2{
     font-family: beautyswing, sans-serif;
 }
 p,
-a{
+a,
+h3{
     font-family: commuters-sans, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -93,11 +94,15 @@ Hero Image Styling
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
+    position: relative;
+}
+.hero-image-section.retreat{
+    background-image: url("../images/retreat-hero.jpg");
 }
 h1{
     text-align: left;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 25%;
     transform: translate(-50%, -50%);
     font-size: 80px;
@@ -175,31 +180,32 @@ Slider Styling
 }
 .slide {
     position: relative;
+    margin: 40px 0px;
 }
 
 .text-content {
     position: absolute;
-    top: 50px;
-    right: 30px;
+    top: 0px;
+    bottom: 0px;
     width: 50%;
-    background: white;
+    background-color: rgba(22, 22, 10, 0.40);
+    color: white;
     padding: 30px;
+    max-width: 400px;
+    text-align: center;
 }
-.text-content.bottom {
-    bottom: 60px;
-    top: initial;
-}
-section.slider {
-    position: relative;
-}
-.text-overlay {
-    position: absolute;
-    bottom: 20px;
-    background: white;
-    left: 30px;
-    width: 50%;
+.text-content img{
+    width: 20%;
     margin: 0 auto;
-    padding: 50px;
+    padding-bottom: 10px;
+}
+.text-content h3{
+    padding-top: 20px;
+}
+.slider {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 /*
 ========
@@ -230,7 +236,7 @@ CTA Card Styling
     max-width: 700px;
     text-align: center;
     margin: 0 auto;
-    background: #d4aa7a;
+    background: #dedede;
     padding: 60px 60px;
     position: relative;
     z-index: 79;
@@ -246,9 +252,9 @@ CTA Card Styling
     transition: .3s;
 }
 .reserve-button:hover{
-    background: white;
+    background: #8aa73d;
     transition: .3s;
-    color: #16160a;
+    color: white;
 }
 /*
 ========
@@ -262,6 +268,7 @@ footer{
     width: 100%;
     background-color: #16160a;
     color: white;
+    height: 200px;
 }
 footer h2{
     font-size: 20px;
@@ -272,6 +279,7 @@ footer p{
 .topleftfooter{
     width: 30%;
     display: inline-block;
+    margin: 20px 0px 0px 20px;
 }
 .toprightfooter{
     width: 65%;
@@ -280,4 +288,27 @@ footer p{
     vertical-align: top;
     position: relative;
     top: 10px;
+    margin: 20px 20px 0px 0px;
+}
+.bottomleftfooter{
+    width: 30%;
+    display: inline-block;
+    margin: 0px 0px 20px 20px;
+}
+.bottomleftfooter img{
+    width: 20px;
+    padding-right: 10px;
+}
+.bottomrightfooter{
+    width: 65%;
+    display: inline-block;
+    text-align: right;
+    vertical-align: bottom;
+    position: relative;
+    top: 30px;
+    margin: 0px 20px 20px 0px;
+}
+.email, 
+.submit{
+    display: inline;
 }
