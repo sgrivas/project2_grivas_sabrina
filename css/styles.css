@@ -259,6 +259,21 @@ CTA Card Styling
 /*
 ========
 
+Gallery Styling
+
+========
+*/
+.gallery img{
+	width: 295px;
+}
+.lb-caption{
+	font-size: 30px !important;
+	color: white;
+	font-family: sans-serif;
+}
+/*
+========
+
 Footer Styling
 
 ========
