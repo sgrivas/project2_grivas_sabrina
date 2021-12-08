@@ -8,12 +8,12 @@
     src: url(../fonts/beautyswing.otf);
 }
 h1,
-h2{
+h2,
+h3{
     font-family: beautyswing, sans-serif;
 }
 p,
-a,
-h3{
+a{
     font-family: commuters-sans, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -21,6 +21,9 @@ h3{
 h2{
     font-size: 44px;
     padding-bottom: 20px;
+}
+h3{
+    font-size: 28px;
 }
 /*
 ========
@@ -35,7 +38,7 @@ Nav Styling
     z-index: 999;
     transition: all 0.2s ease-in-out;
     height: auto;
-    background-color:transparent;  
+    background-color: transparent;  
 }
 .logo {
     width: 30%;
@@ -81,6 +84,24 @@ Nav Styling
 .header.active .reserve-button{
     color: white;
 }
+.second-nav{
+    width: 100%;
+    padding: 20px 40px;
+    background: #DEDEDE;
+}
+.second-nav li{
+    display: inline-block;
+}
+.second-nav a{
+    color: #16160a;
+    text-decoration: none;
+    padding-right: 60px;
+    transition: .3s;
+}
+.second-nav a:hover{
+    color: #8aa73d;
+    transition: .3s;
+}
 /*
 ========
 
@@ -98,6 +119,7 @@ Hero Image Styling
 }
 .hero-image-section.retreat{
     background-image: url("../images/retreat-hero.jpg");
+    height: 450px;
 }
 h1{
     text-align: left;
@@ -263,13 +285,16 @@ Gallery Styling
 
 ========
 */
+#activities h2{
+    text-align: center;
+}
 .gallery img{
-	width: 295px;
+	width: 600px;
 }
 .lb-caption{
 	font-size: 30px !important;
 	color: white;
-	font-family: sans-serif;
+	font-family: commuters-sans, sans-serif;
 }
 /*
 ========
@@ -326,4 +351,55 @@ footer p{
 .email, 
 .submit{
     display: inline;
+}
+/*
+========
+
+RETREAT PAGE SPECIFIC Styling
+
+========
+*/
+.journey-box{
+    border: solid 1px #16160a;
+    padding: 30px;
+    float: left;
+    width: 30%;
+    box-sizing: border-box;
+    margin: 10px 10px;
+    text-align: center;
+}
+.journey-box img{
+    width: 40px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.section-break.retreat{
+    background-image: url("../images/exp-sectionbreak.jpg");
+    margin-bottom: 60px;
+}
+.journey-box li{
+    text-align: left;
+    padding: 5px;
+    font-family: commuters-sans, sans-serif;
+}
+.subtitle{
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    background: #dedede;
+    position: relative;
+    z-index: 79;
+    bottom: -450px;
+}
+.subtitle h2{
+    padding: 10px;
+}
+.container.retreat{
+
+}
+.container.retreat h2{
+    text-align: center;
 }
