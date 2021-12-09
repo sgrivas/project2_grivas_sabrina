@@ -13,7 +13,8 @@ h3{
     font-family: beautyswing, sans-serif;
 }
 p,
-a{
+a,
+summary{
     font-family: commuters-sans, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -285,16 +286,29 @@ Gallery Styling
 
 ========
 */
-#activities h2{
+.gallery{
+    margin: 60px auto;
+}
+.gallery h2{
     text-align: center;
 }
+.gallery p{
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
 .gallery img{
-	width: 600px;
+	width: 400px;
+
 }
 .lb-caption{
 	font-size: 30px !important;
 	color: white;
 	font-family: commuters-sans, sans-serif;
+}
+.gallery-images{
+    text-align: center;
+    padding: 20px;
 }
 /*
 ========
@@ -397,9 +411,14 @@ RETREAT PAGE SPECIFIC Styling
 .subtitle h2{
     padding: 10px;
 }
-.container.retreat{
-
-}
 .container.retreat h2{
     text-align: center;
+}
+details {
+    background: #DEDEDE;
+    padding: 15px 20px;
+    margin: 10px 0px;
+}
+details p {
+    padding: 15px 25px 10px;
 }
