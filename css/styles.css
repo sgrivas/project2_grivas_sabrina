@@ -447,3 +447,14 @@ STORY PAGE SPECIFIC Styling
     background-image: url("../images/tran-sectionbreak.jpg");
     margin-bottom: 60px;
 }
+/*
+========
+
+RESERVE PAGE SPECIFIC Styling
+
+========
+*/
+.hero-image-section.reserve{
+    background-image: url("../images/reserve-hero.jpg");
+    height: 450px;
+}
