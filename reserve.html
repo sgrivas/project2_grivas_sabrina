@@ -30,9 +30,76 @@
         <section class="hero-image-section reserve">
             <h1>Reserve<br>Your Stay</h1>
         </section>
-        <section class="container">
+        <div class="container reserve">
             <h2>Stay Information</h2>
-        </section>
+            <form class="reserve-form" id="reserve-form" name="reserve-form" method="POST" action="form.php" onsubmit="return validateForm(this)"> <!--Taken from index in form pross folder-->
+                <div class="radiobutton input-section">
+                    <p>Which journey would like to attend?</p>
+                    <input type="radio" name="journey" value="standard" id="standard"/>
+                    <label for="standard">Standard</label>
+        
+                    <input type="radio" name="journey" value="premium" id="premium"/>
+                    <label for="premium">Premium</label>
+        
+                    <input type="radio" name="journey" value="unlimited" id="unlimited"/>
+                    <label for="unlimited">Unlimited</label>
+                </div>
+                <div class="number input-section">
+                    <p>How many guests are you reserving for?</p>
+                    <label for="guests">Guests</label>
+                    <input type="number" id="guests" name="guests" min="1" max="100">
+                </div>
+                <div class="datepicker input-section">
+                    <p>Dates requested:</p>
+                    <label for="datefrom">From:</label>
+                    <input type="date" name="datefrom" id="datefrom"/>
+                    
+                    <label for="dateto">To:</label>
+                    <input type="date" name="dateto" id="dateto"/>
+                </div>
+
+                <h2>Guest Information</h2>
+                <p class="question">Enter reservee information</p>
+                <div class="first-name input-section none">
+                    <label for="firstname" class="label_input_wrap">First Name:</label>
+                    <input type="text" name="req_firstname" id="firstname" placeholder="First Name"/> <!--label has to match id-->
+                </div>
+        
+                <div class="last-name input-section none">
+                    <label for="lastname" class="label_input_wrap">Last Name:</label>
+                    <input type="text" name="req_lastname" id="lastname" placeholder="Last Name"/>
+                </div>
+
+                <div class="email input-section none">
+                    <label for="email" class="label_input_wrap">Email:</label>
+                    <input type="email" name="req_email" id="email" placeholder="Email"/>
+                </div>
+        
+                <div class="telephone input-section none">
+                    <label for="telephone" class="label_input_wrap">Phone:</label>
+                    <input type="tel" name="telephone" id="telephone" placeholder="Phone"/>
+                </div>
+                
+                <p class="question">Enter additional guest information</p>
+                <div class="first-name input-section">
+                    <label for="firstname" class="label_input_wrap">First Name:</label>
+                    <input type="text" name="req_firstname" id="firstname" placeholder="First Name"/> <!--label has to match id-->
+                </div>
+        
+                <div class="last-name input-section none">
+                    <label for="lastname" class="label_input_wrap">Last Name:</label>
+                    <input type="text" name="req_lastname" id="lastname" placeholder="Last Name"/>
+                </div>
+
+                <div class="reset input-section">
+                    <input type="reset" value="Refresh"/>
+                </div>
+        
+                <div class="submit input-section">
+                    <input type="submit" value="Reserve"/>
+                </div>
+            </form>
+        </div>
     </main>
     
     <footer>

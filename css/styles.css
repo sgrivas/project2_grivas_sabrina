@@ -458,3 +458,74 @@ RESERVE PAGE SPECIFIC Styling
     background-image: url("../images/reserve-hero.jpg");
     height: 450px;
 }
+.reserve-form{
+    padding: 0px 0px;
+    margin: 0px auto 50px;
+}
+.input-section{
+    margin: 40px 0px;
+    font-family: commuters-sans, sans-serif;
+}
+input{
+    padding: 10px 50px 10px 10px;
+    margin: 0px 5px;
+    border: solid 1px #dedede;
+}
+.first-name,
+.last-name,
+.email,
+.telephone{
+    display: inline;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #16160a;
+    opacity: 1; /* Firefox */
+    font-size: 16px;
+    font-family: commuters-sans, sans-serif;
+}
+.reserve-form p{
+    padding: 10px 0px;
+}
+.none label{
+    display: none;
+}
+.container.reserve h2{
+    padding-bottom: 0px;
+}
+.question{
+    margin-top: 20px;
+}
+.submit input{
+    background: #16160a;
+    color: white;
+    padding: 10px 30px;
+    transition: .3s;
+    margin-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: commuters-sans, sans-serif;
+    display: block;
+    font-size: 16px;
+    transition: .3s;
+}
+.submit input:hover{
+    background: #8aa73d;
+    transition: .3s;
+    color: white;
+}
+.reset input{
+    border: solid 1px #16160a;
+    background: white;
+    color: #16160a;
+    padding: 10px 40px;
+    font-family: commuters-sans, sans-serif;
+    transition: .3s;
+}
+.reset input:hover{
+    background: #16160a;
+    color: white;
+    transition: .3s;
+}
+.datepicker{
+    margin-bottom: 60px;
+}
