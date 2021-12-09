@@ -118,10 +118,6 @@ Hero Image Styling
     background-size: cover;
     position: relative;
 }
-.hero-image-section.retreat{
-    background-image: url("../images/retreat-hero.jpg");
-    height: 450px;
-}
 h1{
     text-align: left;
     position: absolute;
@@ -203,19 +199,16 @@ Slider Styling
 }
 .slide {
     position: relative;
-    margin: 40px 0px;
 }
-
 .text-content {
     position: absolute;
     top: 0px;
     bottom: 0px;
-    width: 50%;
     background-color: rgba(22, 22, 10, 0.40);
     color: white;
     padding: 30px;
-    max-width: 400px;
     text-align: center;
+    width: 40%;
 }
 .text-content img{
     width: 20%;
@@ -228,7 +221,20 @@ Slider Styling
 .slider {
     position: relative;
     max-width: 1000px;
+    margin: 60px auto;
+}
+/* This will style the height of your slider */
+.slick-slider .slick-track {
+    height: 500px;
+}
+.text-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    width: 50%;
     margin: 0 auto;
+    padding: 50px;
+    color: white;
 }
 /*
 ========
@@ -373,6 +379,10 @@ RETREAT PAGE SPECIFIC Styling
 
 ========
 */
+.hero-image-section.retreat{
+    background-image: url("../images/retreat-hero.jpg");
+    height: 450px;
+}
 .journey-box{
     border: solid 1px #16160a;
     padding: 30px;
@@ -421,4 +431,19 @@ details {
 }
 details p {
     padding: 15px 25px 10px;
+}
+/*
+========
+
+STORY PAGE SPECIFIC Styling
+
+========
+*/
+.hero-image-section.story{
+    background-image: url("../images/story-hero.jpg");
+    height: 450px;
+}
+.section-break.story{
+    background-image: url("../images/tran-sectionbreak.jpg");
+    margin-bottom: 60px;
 }
