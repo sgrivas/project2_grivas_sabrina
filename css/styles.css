@@ -136,7 +136,7 @@ Intro Styling
 ========
 */
 .container{
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
     padding-top: 50px;
 }
@@ -220,7 +220,7 @@ Slider Styling
 }
 .slider {
     position: relative;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 60px auto;
 }
 /* This will style the height of your slider */
@@ -446,6 +446,48 @@ STORY PAGE SPECIFIC Styling
 .section-break.story{
     background-image: url("../images/tran-sectionbreak.jpg");
     margin-bottom: 60px;
+}
+.container.guides{
+    text-align: center;
+    margin: 0 auto;
+}
+/*=====
+Flip Card Styling
+=====*/
+.flip-card{
+    width: 280px;
+    height: 280px;
+    display: inline-block;
+    background: transparent;
+    margin-bottom: 200px;
+}
+.flip-card img{
+    width: 100%;
+}
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform .6s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+.flip-card-front, 
+.flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-back{
+    background: #dedede;
+    color: #16160a;
+    transform: rotateY(180deg);
+    padding-top: 100px;
 }
 /*
 ========
