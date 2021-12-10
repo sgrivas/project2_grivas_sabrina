@@ -31,8 +31,8 @@
             <h1>Reserve<br>Your Stay</h1>
         </section>
         <div class="container reserve">
-            <h2>Stay Information</h2>
             <form class="reserve-form" id="reserve-form" name="reserve-form" method="POST" action="form.php" onsubmit="return validateForm(this)"> <!--Taken from index in form pross folder-->
+                <h2>Stay Information</h2>
                 <div class="radiobutton input-section">
                     <p>Which journey would like to attend?</p>
                     <input type="radio" name="journey" value="standard" id="standard"/>
@@ -81,7 +81,7 @@
                 </div>
                 
                 <p class="question">Enter additional guest information</p>
-                <div class="first-name input-section">
+                <div class="first-name input-section none">
                     <label for="firstname" class="label_input_wrap">First Name:</label>
                     <input type="text" name="req_firstname" id="firstname" placeholder="First Name"/> <!--label has to match id-->
                 </div>
@@ -92,7 +92,7 @@
                 </div>
 
                 <div class="reset input-section">
-                    <input type="reset" value="Refresh"/>
+                    <input type="reset" value="Clear All"/>
                 </div>
         
                 <div class="submit input-section">
@@ -106,24 +106,15 @@
         <section class="topleftfooter">
             <h2>Tranquillum</h2>
         </section>
+        
         <section class="toprightfooter">
-            <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)"> <!--Taken from index in form pross folder-->
-                <div class="email input-section">
-                    <label for="email" class="label_input_wrap">Email:</label>
-                    <input type="email" name="req_email" id="email" placeholder="email@email.com"/>
-                </div>
-                <div class="submit input-section">
-                    <input type="submit" value="Sign Up"/>
-                </div>
-            </form>
-            </section>
-        <section class="bottomleftfooter">
             <a href="facebook.com"><img src="images/fblogo.png" alt="Facebook"></a>
             <a href="twitter.com"><img src="images/tlogo.png" alt="Twitter"></a>
             <a href="instagram.com"><img src="images/iglogo.png" alt="Instagram"></a>
         </section>
-        <section class="bottomrightfooter">
-            <p>Tranquillum<br>1234 Retreat Way<br>Northern, CA 90401<br>808-555-1224</p>
+        
+        <section class="bottomleftfooter">
+            <p>1234 Retreat Way<br>Northern, CA 90401<br>808-555-1224</p>
         </section>
     </footer>
 

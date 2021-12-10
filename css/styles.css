@@ -21,7 +21,7 @@ summary{
 }
 h2{
     font-size: 44px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 h3{
     font-size: 28px;
@@ -193,10 +193,6 @@ Slider Styling
 
 ========
 */
-.slick-prev:before, 
-.slick-next:before {
-    color: #333;
-}
 .slide {
     position: relative;
 }
@@ -206,7 +202,7 @@ Slider Styling
     bottom: 0px;
     background-color: rgba(22, 22, 10, 0.40);
     color: white;
-    padding: 30px;
+    padding: 130px 30px;
     text-align: center;
     width: 40%;
 }
@@ -215,13 +211,10 @@ Slider Styling
     margin: 0 auto;
     padding-bottom: 10px;
 }
-.text-content h3{
-    padding-top: 20px;
-}
 .slider {
     position: relative;
     max-width: 900px;
-    margin: 60px auto;
+    margin: 60px auto 80px;
 }
 /* This will style the height of your slider */
 .slick-slider .slick-track {
@@ -229,12 +222,24 @@ Slider Styling
 }
 .text-overlay {
     position: absolute;
-    bottom: 20px;
-    left: 30px;
+    top: 15px;
+    left: 10px;
     width: 50%;
     margin: 0 auto;
     padding: 50px;
     color: white;
+}
+/* This will style the navigation buttons */
+.slick-prev:before, 
+.slick-next:before {
+    color: #16160a;
+}
+.slick-dots li button:before {
+    font-size: 14px;
+    color: #16160a;
+}
+.slider-name{
+    padding-top: 20px;
 }
 /*
 ========
@@ -295,9 +300,6 @@ Gallery Styling
 .gallery{
     margin: 60px auto;
 }
-.gallery h2{
-    text-align: center;
-}
 .gallery p{
     max-width: 700px;
     margin: 0 auto;
@@ -319,62 +321,6 @@ Gallery Styling
 /*
 ========
 
-Footer Styling
-
-========
-*/
-footer{
-    bottom: 0;
-    width: 100%;
-    background-color: #16160a;
-    color: white;
-    height: 200px;
-}
-footer h2{
-    font-size: 20px;
-}
-footer p{
-    font-size: 14px;
-}
-.topleftfooter{
-    width: 30%;
-    display: inline-block;
-    margin: 20px 0px 0px 20px;
-}
-.toprightfooter{
-    width: 65%;
-    display: inline-block;
-    text-align: right;
-    vertical-align: top;
-    position: relative;
-    top: 10px;
-    margin: 20px 20px 0px 0px;
-}
-.bottomleftfooter{
-    width: 30%;
-    display: inline-block;
-    margin: 0px 0px 20px 20px;
-}
-.bottomleftfooter img{
-    width: 20px;
-    padding-right: 10px;
-}
-.bottomrightfooter{
-    width: 65%;
-    display: inline-block;
-    text-align: right;
-    vertical-align: bottom;
-    position: relative;
-    top: 30px;
-    margin: 0px 20px 20px 0px;
-}
-.email, 
-.submit{
-    display: inline;
-}
-/*
-========
-
 RETREAT PAGE SPECIFIC Styling
 
 ========
@@ -382,6 +328,9 @@ RETREAT PAGE SPECIFIC Styling
 .hero-image-section.retreat{
     background-image: url("../images/retreat-hero.jpg");
     height: 450px;
+}
+#activities h2{
+    text-align: center;
 }
 .journey-box{
     border: solid 1px #16160a;
@@ -450,6 +399,13 @@ STORY PAGE SPECIFIC Styling
 .container.guides{
     text-align: center;
     margin: 0 auto;
+    padding-top: 0px;
+}
+.text-content.story{
+    padding: 170px 30px;
+}
+.gallery.story h3{
+    text-align: center;
 }
 /*=====
 Flip Card Styling
@@ -487,7 +443,7 @@ Flip Card Styling
     background: #dedede;
     color: #16160a;
     transform: rotateY(180deg);
-    padding-top: 100px;
+    padding-top: 140px;
 }
 /*
 ========
@@ -505,7 +461,7 @@ RESERVE PAGE SPECIFIC Styling
     margin: 0px auto 50px;
 }
 .input-section{
-    margin: 40px 0px;
+    margin-bottom: 40px;
     font-family: commuters-sans, sans-serif;
 }
 input{
@@ -537,6 +493,9 @@ input{
 .question{
     margin-top: 20px;
 }
+.reset{
+    display: inline;
+}
 .submit input{
     background: #16160a;
     color: white;
@@ -546,9 +505,9 @@ input{
     margin: 0 auto;
     text-align: center;
     font-family: commuters-sans, sans-serif;
-    display: block;
     font-size: 16px;
     transition: .3s;
+    margin: 40px 0px;
 }
 .submit input:hover{
     background: #8aa73d;
@@ -570,4 +529,49 @@ input{
 }
 .datepicker{
     margin-bottom: 60px;
+}
+/*
+========
+
+Footer Styling
+
+========
+*/
+footer{
+    bottom: 0;
+    width: 100%;
+    background-color: #16160a;
+    color: white;
+    height: 170px;
+}
+footer h2{
+    font-size: 24px;
+    text-align: left;
+}
+footer p{
+    font-size: 14px;
+}
+.topleftfooter{
+    width: 30%;
+    display: inline-block;
+    margin: 20px 0px 0px 20px;
+}
+.toprightfooter{
+    width: 65%;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    position: relative;
+    top: 10px;
+    margin: 20px 20px 0px 0px;
+}
+.toprightfooter img{
+    width: 25px;
+    padding-right: 10px;
+}
+.bottomleftfooter{
+    width: 30%;
+    display: inline-block;
+    margin: 20px;
+    bottom: 0px;
 }
