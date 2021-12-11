@@ -20,6 +20,9 @@ summary{
     font-style: normal;
     font-size: 14px;
 }
+h1{
+    color: white;
+}
 h2{
     font-size: 44px;
     padding-bottom: 15px;
@@ -29,6 +32,10 @@ h3{
 }
 ::selection {
     background: #DEDEDE;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 /*
 ========
