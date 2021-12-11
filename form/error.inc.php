@@ -95,6 +95,44 @@ p{
     margin: auto;
     padding-top: 50px;
 }
+footer{
+    bottom: 0;
+    width: 100%;
+    background-color: #16160a;
+    color: white;
+    height: 170px;
+}
+footer h2{
+    font-size: 24px;
+    text-align: left;
+}
+footer p{
+    font-size: 14px;
+}
+.topleftfooter{
+    width: 30%;
+    display: inline-block;
+    margin: 20px 0px 0px 20px;
+}
+.toprightfooter{
+    width: 65%;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    position: relative;
+    top: 10px;
+    margin: 20px 20px 0px 0px;
+}
+.toprightfooter img{
+    width: 25px;
+    padding-right: 10px;
+}
+.bottomleftfooter{
+    width: 30%;
+    display: inline-block;
+    margin: 20px;
+    bottom: 0px;
+}
 </style>
 <header class="header">
     <a class="logo" href="index.html">Tranquillum</a>
@@ -121,3 +159,18 @@ p{
 
 	<p><strong><a href="#" onClick="history.go(-1)">Back to form</a></strong></p>
 </section>
+<footer>
+    <section class="topleftfooter">
+        <h2>Tranquillum</h2>
+    </section>
+        
+    <section class="toprightfooter">
+        <a href="facebook.com"><img src="images/fblogo.png" alt="Facebook" title="Facebook"></a>
+        <a href="twitter.com"><img src="images/tlogo.png" alt="Twitter" title="Twitter"></a>
+        <a href="instagram.com"><img src="images/iglogo.png" alt="Instagram" title="Instagram"></a>
+    </section>
+        
+    <section class="bottomleftfooter">
+         <p>1234 Retreat Way<br>Northern, CA 90401<br>808-555-1224</p>
+    </section>
+</footer>
