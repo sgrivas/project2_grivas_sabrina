@@ -1,9 +1,5 @@
 <style>
-    @import url("https://use.typekit.net/ope6eob.css");
-    @font-face {
-    font-family: beautyswing;
-    src: url(../fonts/beautyswing.otf);
-}
+@import url("https://use.typekit.net/ope6eob.css");
 *{
         margin: 0;
         padding: 0;
@@ -11,14 +7,16 @@
         color: #16160a;
 }
 h1{
-    font-family: beautyswing, sans-serif;
+    font-family: commuters-sans, sans-serif;
     font-size: 80px;
+    padding: 20px;
 }
 p{
     font-family: commuters-sans, sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 14px;
+    padding: 20px;
 }
 .header {
     position: fixed;
@@ -33,7 +31,7 @@ p{
     display: inline-block;
     text-align: center;
     padding: 15px 0;
-    font-family: beautyswing, sans-serif;
+    font-family: commuters-sans, sans-serif;
     text-decoration: none;
     font-size: 20px;
     color: #16160a;
@@ -93,45 +91,7 @@ p{
 .container{
     max-width: 900px;
     margin: auto;
-    padding-top: 50px;
-}
-footer{
-    bottom: 0;
-    width: 100%;
-    background-color: #16160a;
-    color: white;
-    height: 170px;
-}
-footer h2{
-    font-size: 24px;
-    text-align: left;
-}
-footer p{
-    font-size: 14px;
-}
-.topleftfooter{
-    width: 30%;
-    display: inline-block;
-    margin: 20px 0px 0px 20px;
-}
-.toprightfooter{
-    width: 65%;
-    display: inline-block;
-    text-align: right;
-    vertical-align: top;
-    position: relative;
-    top: 10px;
-    margin: 20px 20px 0px 0px;
-}
-.toprightfooter img{
-    width: 25px;
-    padding-right: 10px;
-}
-.bottomleftfooter{
-    width: 30%;
-    display: inline-block;
-    margin: 20px;
-    bottom: 0px;
+    padding-top: 100px;
 }
 </style>
 <header class="header">
@@ -149,18 +109,3 @@ footer p{
     <h1>Oops!</h1>  
     <p>Something went wrong with your submission. Please try again.</p>
 </section>
-<footer>
-    <section class="topleftfooter">
-        <h2>Tranquillum</h2>
-    </section>
-        
-    <section class="toprightfooter">
-        <a href="facebook.com"><img src="images/fblogo.png" alt="Facebook" title="Facebook"></a>
-        <a href="twitter.com"><img src="images/tlogo.png" alt="Twitter" title="Twitter"></a>
-        <a href="instagram.com"><img src="images/iglogo.png" alt="Instagram" title="Instagram"></a>
-    </section>
-        
-    <section class="bottomleftfooter">
-         <p>1234 Retreat Way<br>Northern, CA 90401<br>808-555-1224</p>
-    </section>
-</footer>
