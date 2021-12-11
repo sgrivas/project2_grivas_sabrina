@@ -36,7 +36,7 @@ p{
     font-family: beautyswing, sans-serif;
     text-decoration: none;
     font-size: 20px;
-    color: white;
+    color: #16160a;
 }
 .header nav {
     width: 65%;
@@ -52,7 +52,7 @@ p{
 }
 
 .header nav a {
-    color: white;
+    color: #16160a;
     text-decoration: none;
     margin: 0 20px;
     transition: .3s;
@@ -70,7 +70,7 @@ p{
     color: #16160a;
 }
 .header.active .reserve-button{
-    color: white;
+    color: #16160a;
 }
 .second-nav{
     width: 100%;
