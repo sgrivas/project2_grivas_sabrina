@@ -97,15 +97,15 @@ p{
 }
 </style>
 <header class="header">
-        <a class="logo" href="index.html">Tranquillum</a>
+    <a class="logo" href="index.html">Tranquillum</a>
 
-        <nav>
-            <ul>
-                <li><a href="retreat.html">Retreat</a></li>
-                <li><a href="story.html">Story</a></li>
-                <li><a class="reserve-button" href="reserve.html">Reserve</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul>
+            <li><a href="retreat.html">Retreat</a></li>
+            <li><a href="story.html">Story</a></li>
+            <li><a class="reserve-button" href="reserve.html">Reserve</a></li>
+        </ul>
+    </nav>
 </header>
 <section class="container">
     <h1>Oops!</h1>  
