@@ -122,7 +122,7 @@ Hero Image Styling
 */
 .hero-image-section{
     background-image: url("../images/home-hero.jpg");
-    height: 500px;
+    height: 800px;
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
@@ -342,7 +342,7 @@ RETREAT PAGE SPECIFIC Styling
 */
 .hero-image-section.retreat{
     background-image: url("../images/retreat-hero.jpg");
-    height: 450px;
+    height: 650px;
 }
 #activities h2{
     text-align: center;
@@ -405,7 +405,7 @@ STORY PAGE SPECIFIC Styling
 */
 .hero-image-section.story{
     background-image: url("../images/story-hero.jpg");
-    height: 450px;
+    height: 650px;
 }
 .section-break.story{
     background-image: url("../images/tran-sectionbreak.jpg");
@@ -469,7 +469,6 @@ RESERVE PAGE SPECIFIC Styling
 */
 .hero-image-section.reserve{
     background-image: url("../images/reserve-hero.jpg");
-    height: 450px;
 }
 .reserve-form{
     padding: 0px 0px;
