@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="retreat, wellness resort, wellness, rehab, rehabilitation, lifestyle, retreat center, luxury, health spa"/>
-    <meta name="description" content="Some journeys start here. Some are re-aligned. Others turned around. But all are impacted. Tranquillum guides you to your best life, throughout life. Find your path to well-being. Lifetime Impact. Integral Answers. Evidence-Based Progress. Personalized Guidance.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tranquillum</title>
 
     <!-- Favicon-->
@@ -18,6 +18,9 @@
 
     <!--Adobe Font-->
     <link rel="stylesheet" href="https://use.typekit.net/ope6eob.css">
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8GR6ZNQJT"></script>
@@ -28,76 +31,93 @@
 
     gtag('config', 'G-B8GR6ZNQJT');
     </script>
+
 </head>
 <body>
     <header class="header">
-        <a class="logo" href="index.html">Tranquillum</a>
-
-        <nav>
-            <ul>
-                <li><a href="retreat.html">Retreat</a></li>
-                <li><a href="story.html">Story</a></li>
-                <li><a class="reserve-button" href="reserve.html">Reserve</a></li>
-            </ul>
-        </nav>
+        <a class="logo" href="index.html"><img src="images/globe-logo.png" alt="Globe Logo"></a>
+        
+        <!-- The overlay -->
+        <section id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <!-- Overlay content -->   
+            <nav class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="retreat.html">Retreat</a>
+                <a href="story.html">Story</a>
+                <a href="reserve.html">Reserve</a>
+            </nav>
+        </section>
+        
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span class="bars" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </header>
 
-    <main>
-        <section class="hero-image-section">
-            <h1>Welcome to<br>Tranquillum</h1>
+    <main class="container">
+        <section class="hero-image">
+            <div class="hero-text">
+                <h1>Welcome to<br>Tranquillum</h1>
+                <p>Designed to meet you at any point on your wellness journey.</p>
+                <a class="reserve-button" href="reserve.html">Reserve</a>
+            </div>       
         </section>
 
-        <section class="container">
-            <img class="globe-logo" src="images/globe-logo.png" alt="Globe Logo" title="Globe logo">
-            <p class="intro-text">Tranquillum is designed to meet you at any point on your wellness journey. Experience the lifelong benefits of personalized packages and curated programs where a team of Tranquillum Guides and wellness practitioners help to distill preventative health practices into three simple paths for everyday living: Balance, Spirit, Unity.</p>
+        <section class="intro">
+            <h2>Start Your Journey</h2>
+            <p>Experience the lifelong benefits of personalized packages and curated programs where a team of Tranquillum Guides and wellness practitioners help to distill preventative health practices into three simple paths for everyday living: Balance, Spirit, Unity.</p>
+            <a class="reserve-button" href="retreat.html">Discover</a>
         </section>
 
-        <div class="container">
-            <section>
-                <div class="left-half">
-                    <img src="images/story-home.png" alt="Our Story" title="Our Story">
-                </div>
-
-                <div class="right-half">
-                    <h2>Our Story</h2>
-                    <p>Tranquillum applies data-driven health knowledge and utilizes technology to create premier wellbeing retreats in California to promote preventative care and healthy lifestyle practices.</p>
-
-                    <a class="view-more-button" href="story.html">View More</a>
-                </div>
-            </section>
-
-            <section>
-                <div class="right-half">
-                    <h2>Tranquillum</h2>
-                    <p>Beneath the overhanging branches of Cook pines and gently swaying palms, discover Tranquillum, A Wellness Resort.</p>
-
-                    <a class="view-more-button" href="story.html">View More</a>
-                </div>
-
-                <div class="left-half">
-                    <img src="images/tran-home.png" alt="Tranquillum" title="Tranquillum">
-                </div>
-            </section>
-
-            <section>
-                <div class="left-half">
+        <section class="columns">
+            <div class="one-column">
+                <figure>
                     <img src="images/exp-home.png" alt="Experiences" title="Experiences">
-                </div>
-
-                <div class="right-half">
-                    <h2>Experiences</h2>
-                    <p>Your journey is marked by meaningful moments along the way. Let us craft your personal itinerary from our Experiences and find the activities that inspire you to build a lifetime of wellbeing.</p>
-
-                    <a class="view-more-button" href="retreat.html">View More</a>
-                </div>
-            </section>
-        </div>
+                    <figcaption>
+                        <h2>Experiences</h2>
+                        <p>Your journey is marked by meaningful moments along the way. Let us craft your personal itinerary from our Experiences and find the activities that inspire you to build a lifetime of wellbeing.</p>
+                        <a class="view-more-button" href="retreat.html">View More</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="one-column">
+                <figure>
+                    <img src="images/horse.png" alt="Horse Back Riding" title="Activities">
+                    <figcaption>
+                        <h2>Activities</h2>
+                        <p>Tranquillum applies data-driven health knowledge and utilizes technology to create premier wellbeing retreats in California to promote preventative care and healthy lifestyle practices.</p>
+                        <a class="view-more-button" href="retreat.html">View More</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="one-column">
+                <figure>
+                    <img src="images/story-home.png" alt="Masha" title="Our Story">
+                    <figcaption>
+                        <h2>Our Story</h2>
+                        <p>Find what inspires you through personalized wellness experiences and programs, set within the most restorative and beautifully designed resort in the world.</p>
+                        <a class="view-more-button" href="story.html">View More</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="one-column">
+                <figure>
+                    <img src="images/tran-home.png" alt="Tranquillum" title="Tranquillum">
+                    <figcaption>
+                        <h2>Explore Tranquillum</h2>
+                        <p>Beneath the overhanging branches of Cook pines and gently swaying palms, discover Tranquillum, A Wellness Resort.</p>
+                        <a class="view-more-button" href="story.html">View More</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
 
         <section class="slider">
             <div class="featured-slider">
                 <!-- Slide 1 -->
                 <div class="slide">
-                    <img src="images/test1-slide.png" alt="Kiara Quote" title="Kiara Quotes">
+                    <img class="slide-img" src="images/test1-slide.png" alt="Kiara Quote" title="Kiara Quotes">
                     <div class="text-content">
                         <img src="images/quote.png" alt="Quote" title="quote">
                         <p>Tranquillum made me feel whole again. I got my life back. My happiness.</p>
@@ -107,7 +127,7 @@
 
                 <!-- Slide 2 -->
                 <div class="slide">
-                    <img src="images/test2-slide.png" alt="Martin Quote" title="Martin Quote">
+                    <img class="slide-img" src="images/test2-slide.png" alt="Martin Quote" title="Martin Quote">
                     <div class="text-content">
                         <img src="images/quote.png" alt="Quote" title="quote">
                         <p>I came home from Tranquillum a new person. Stronger, confident, and optimistic.</p>
@@ -117,7 +137,7 @@
 
                 <!-- Slide 3 -->
                 <div class="slide">
-                    <img src="images/test3-slide.png" alt="Riley Quote" title="Riley Quote">
+                    <img class="slide-img" src="images/test3-slide.png" alt="Riley Quote" title="Riley Quote">
                     <div class="text-content">
                         <img src="images/quote.png" alt="Quote" title="quote">
                         <p>The experience is quite unlike anything you could imagine. It kept me on my toes. It turned my stinking thinking upside down.</p>
@@ -127,27 +147,17 @@
               </div>
         </section>
 
-        <section class="section-break">
-            <div class="cta-card">
-                <h2>Join Us</h2>
-                <p>Find what inspires you through personalized wellness experiences and programs, set within the most restorative and beautifully designed resort in the world. Select from unique packages such as a fully optimized wellness program structured around your health data, a flexible stay with curated wellbeing activities, or other personalized options that support your unique journey.</p>
-                <a class="reserve-button" href="reserve.html">Reserve</a>
-            </div>
+        <section class="cta-card">
+            <h2>Featured In</h2>
         </section> 
     </main>
     
     <footer>
-        <section class="topleftfooter">
+        <section>
             <h2>Tranquillum</h2>
-        </section>
-        
-        <section class="toprightfooter">
             <a href="https://www.facebook.com" target="_blank"><img src="images/fblogo.png" alt="Facebook" title="Facebook"></a>
             <a href="https://twitter.com/home" target="_blank"><img src="images/tlogo.png" alt="Twitter" title="Twitter"></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="images/iglogo.png" alt="Instagram" title="Instagram"></a>
-        </section>
-        
-        <section class="bottomleftfooter">
             <p>1234 Retreat Way<br>Northern, CA 90401<br>808-555-1224</p>
         </section>
     </footer>

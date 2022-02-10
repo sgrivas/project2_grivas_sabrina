@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="retreat, wellness resort, wellness, rehab, rehabilitation, lifestyle, retreat center, luxury, health spa"/>
-    <meta name="description" content="Some journeys start here. Some are re-aligned. Others turned around. But all are impacted. Tranquillum guides you to your best life, throughout life. Find your path to well-being. Lifetime Impact. Integral Answers. Evidence-Based Progress. Personalized Guidance.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tranquillum</title>
     
     <!-- Favicon-->
@@ -32,78 +32,83 @@
 </head>
 <body>
     <header class="header">
-        <a class="logo" href="index.html">Tranquillum</a>
-
-        <nav>
-            <ul>
-                <li><a href="retreat.html">Retreat</a></li>
-                <li><a href="story.html">Story</a></li>
-                <li><a class="reserve-button" href="reserve.html">Reserve</a></li>
-            </ul>
-        </nav>
+        <a class="logo" href="index.html"><img src="images/globe-logo.png" alt="Globe Logo"></a>
+        
+        <!-- The overlay -->
+        <section id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <!-- Overlay content -->   
+            <nav class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="retreat.html">Retreat</a>
+                <a href="story.html">Story</a>
+                <a href="reserve.html">Reserve</a>
+            </nav>
+        </section>
+        
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span class="bars" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </header>
 
-    <main>
-        <section class="hero-image-section retreat">
-            <h1>Retreat</h1>
+    <main class="container">
+        <!--Hero-->
+        <section class="hero-image retreat">
+            <div class="hero-text">
+                <h1>Retreat</h1>
+                <p>Designed to meet you at any point on your wellness journey.</p>
+                <a class="reserve-button" href="reserve.html">Reserve</a>
+            </div>       
         </section>
 
-        <nav class="second-nav">
-            <ul>
-                <li><a href="#journeys">Journeys</a></li>
-                <li><a href="#experiences">Experiences</a></li>
-                <li><a href="#activities">Activities</a></li>
-            </ul>
-        </nav>
-
-        <section class="container retreat">
+        <!--Journeys-->
+        <section class="intro">
             <h2>Journeys</h2>
-            <p class="intro-text">Tranquillum sits one of the most unique wellbeing retreats in the world. Brought to life by some of the best-in-class minds and practitioners in wellness, the Tranquillum philosophy is led by science, backed by evidence-based practices, and supported by innovative technology to meet you on your wellbeing journey.</p>
-        </section>
-
-        <section class="container clearfix" id="journeys">
-            <div class="journey-box">
-                <img src="images/tri1.png" alt="Triangle" title="Triangle">
-                <h3>Standard</h3>
-                <ul>
-                    <li>7-Day Signature Stay</li>
-                    <li>Diagnostic testing including Bod Pod body fat analysis and cholesterol testing</li>
-                    <li>Starts at $7,300 per person for double occupancy and $8,600 for a single room, pricing includes all meals, accommodations & fitness programming.</li>
-                </ul>
-            </div>
-            <div class="journey-box">
-                <img src="images/tri2.png" alt="Triangles" title="Triangle">
-                <h3>Premium</h3>
-                <ul>
-                    <li>7-Day Program for Groups of 1-4</li>
-                    <li>Diagnostic testing including Bod Pod body fat analysis and cholesterol testing</li>
-                    <li>Starts at $9,400 per person for doubles and $11,000 for a single room, pricing includes private fitness programming, meals and accommodations.</li>
-                </ul>
-            </div>
-            <div class="journey-box">
-                <img src="images/tri3.png" alt="Triangles" title="Triangle">
-                <h3>Unlimited</h3>
-                <ul>
-                    <li>9-Day Wellness Immersion</li>
-                    <li>Diagnostic testing including Bod Pod body fat analysis and cholesterol testing</li>
-                    <li>Starts at $10,800 for the group program and $14,300 as a private experience, pricing includes all meals, accommodations & fitness programming</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section-break retreat" id="experiences">
-            <div class="subtitle">
-                <h2>Experiences</h2>
-            </div>
-        </section>
-
-        <div class="container retreat">
-            <section>
-                <div class="left-half">
-                    <img src="images/consul.png" alt="Consultations" title="Consulations">
+            <p>Tranquillum sits one of the most unique wellbeing retreats in the world. Brought to life by some of the best-in-class minds and practitioners in wellness, the Tranquillum philosophy is led by science, backed by evidence-based practices, and supported by innovative technology to meet you on your wellbeing journey.</p>
+            <div class="columns three">
+                <div class="one-column journey-box">
+                    <img src="images/tri1.png" alt="Triangle" title="Triangle">
+                    <h3>Standard</h3>
+                    <ul>
+                        <li>7-Day Signature Stay</li>
+                        <li>Diagnostic testing including Bod Pod body fat analysis and cholesterol testing</li>
+                        <li>Starts at $7,300 per person for double occupancy and $8,600 for a single room, pricing includes all meals, accommodations & fitness programming.</li>
+                    </ul>
                 </div>
-
-                <div class="right-half">
+                <div class="one-column journey-box">
+                    <img src="images/tri2.png" alt="Triangles" title="Triangle">
+                    <h3>Premium</h3>
+                    <ul>
+                        <li>7-Day Program for Groups of 1-4</li>
+                        <li>Diagnostic testing including Bod Pod body fat analysis and cholesterol testing</li>
+                        <li>Starts at $9,400 per person for doubles and $11,000 for a single room, pricing includes private fitness programming, meals and accommodations.</li>
+                    </ul>
+                </div>
+                <div class="one-column journey-box">
+                    <img src="images/tri3.png" alt="Triangles" title="Triangle">
+                    <h3>Unlimited</h3>
+                    <ul>
+                        <li>9-Day Wellness Immersion</li>
+                        <li>Diagnostic testing including Bod Pod body fat analysis and cholesterol testing</li>
+                        <li>Starts at $10,800 for the group program and $14,300 as a private experience, pricing includes all meals, accommodations & fitness programming</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!--Experiences-->
+        <section class="middle">
+            <article class="subtitle">
+                <h2>Experiences</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt aperiam adipisci earum necessitatibus officiis, ex et. Ratione qui numquam nemo maxime rerum natus, molestiae ullam magnam dolorum. Velit, sapiente deleniti.</p>
+            </article>
+            <div class="columns">
+                <!--Consultations-->
+                <figure class="one-column">
+                    <img src="images/consul.png" alt="Consultations" title="Consulations">
+                </figure>
+                <aside class="one-column">
                     <h3>Consultations</h3>
                     <p>To guide you along your journey, 1:1 sessions deepen your connections to your personal goals and intentions. Meet privately with our skilled wellness practitioners and our Sensei Guides who have achieved advanced degrees that align with our paths to Move, Nourish and Rest.</p>
                     <details>
@@ -114,11 +119,12 @@
                         <summary>1:1 Private Sessions</summary>
                         <p>This private session explores your approach to self-optimization with a performance psychology specialist. Use this time to investigate how mental habits and routinized behaviors can serve you in pursuit of personal growth.</p>
                     </details>
-                </div>
-            </section>
-
-            <section>
-                <div class="right-half">
+                </aside>
+                <!--Spa Services-->
+                <figure class="one-column">
+                    <img src="images/spa.png" alt="Spa" title="Spa">
+                </figure>
+                <aside class="one-column">
                     <h3>Spa Services</h3>
                     <p>Within the seclusion of your own spa hale, restorative treatments and invigorating bodywork elevate your physical, emotional and spiritual state of being. Relax in spacious surroundings that intertwine with the natural environment, and move effortlessly between amenities such as an outdoor soaking pool, infrared sauna and steam shower. </p>
                     <details>
@@ -129,19 +135,12 @@
                         <summary>Restorative Treatments</summary>
                         <p>Savor the peace that comes when you slow down completely. Rest begins with guided breath-work which gives way to a bespoke full-body massage accompanied by a deep scalp massage. </p>
                     </details>
-                </div>
-
-                <div class="left-half">
-                    <img src="images/spa.png" alt="Spa" title="Spa">
-                </div>
-            </section>
-
-            <section>
-                <div class="left-half">
+                </aside>
+                <!--Explorations-->
+                <figure class="one-column">
                     <img src="images/explorations.png" alt="Explorations" title="Explorations">
-                </div>
-
-                <div class="right-half">
+                </figure>
+                <aside class="one-column">
                     <h3>Explorations</h3>
                     <p>Explore nature in all its beauty and abundance. Our concierge crafts special excursions through the mountainous grasslands, untouched Cook pine forests and secluded coastline. </p>
                     <details>
@@ -152,10 +151,10 @@
                         <summary>Water Discovery</summary>
                         <p>Watch the sunset over the Pacific during a two-hour cruise along the scenic coastline. Enjoy cocktails and pupus (appetizers) as the evening sky emerges, spotting spinner dolphins frolicking in the surf.</p>
                     </details>
-                </div>
-            </section>
-        </div>
-
+                </aside>
+            </div>
+        </section>
+    
         <section class="gallery" id="activities">
             <h2>Activities</h2>
             <p>Tranquillum is your playground. Wander through its pine-clad forests, pause on its glimmering shores and let the vitality of the island fuel your journey.</p>
@@ -170,17 +169,11 @@
     </main>
     
     <footer>
-        <section class="topleftfooter">
+        <section>
             <h2>Tranquillum</h2>
-        </section>
-        
-        <section class="toprightfooter">
             <a href="https://www.facebook.com" target="_blank"><img src="images/fblogo.png" alt="Facebook" title="Facebook"></a>
             <a href="https://twitter.com/home" target="_blank"><img src="images/tlogo.png" alt="Twitter" title="Twitter"></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="images/iglogo.png" alt="Instagram" title="Instagram"></a>
-        </section>
-        
-        <section class="bottomleftfooter">
             <p>1234 Retreat Way<br>Northern, CA 90401<br>808-555-1224</p>
         </section>
     </footer>
