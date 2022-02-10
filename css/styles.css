@@ -54,7 +54,7 @@ Nav Styling
     top: 0;
 }
 .logo {
-    width: 10%;
+    width: 100%;
     display: inline-block;
     padding: 15px;
     font-family: newyork, sans-serif;
@@ -63,7 +63,7 @@ Nav Styling
     color: white;
 }
 .logo img{
-    max-width: 100%;
+    max-width: 3%;
 }
 .header.active {
     background: #fff;
@@ -149,7 +149,7 @@ Hero Image Styling
 ========
 */
 .hero-image{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/home-hero.jpg");
+    background-image: url("../images/home-hero.jpg");
     height: 640px;
     background-repeat: no-repeat;
     background-position: center; 
@@ -201,9 +201,6 @@ Columns Styling
     padding-bottom: 10px;
 }
 .columns figcaption{
-    text-align: center;
-}
-.columns figcaption p{
     text-align: left;
 }
 .one-column{
@@ -312,41 +309,32 @@ CTA Card Styling
 /*
 ========
 
-Gallery Styling
+Lightbox Styling
 
 ========
 */
-.gallery{
-    margin: 60px auto;
+.gallery-images{
+    padding: 20px;
+    display: grid;
 }
-.gallery p{
-    max-width: 700px;
-    margin: 0 auto;
-    padding-bottom: 20px;
-}
-.gallery img{
-	width: 400px;
-
+.gallery-images img{
+	width: 100%;
 }
 .lb-caption{
 	font-size: 30px !important;
 	color: white;
 	font-family: commuters-sans, sans-serif;
 }
-.gallery-images{
-    text-align: center;
-    padding: 20px;
-}
+
 /*
 ========
 
-RETREAT PAGE SPECIFIC Styling
+Retreat Page Specific Styling
 
 ========
 */
 .hero-image.retreat{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/retreat-hero.jpg");
-
+    background-image: url("../images/retreat-hero.jpg");
 }
 #activities h2{
     text-align: center;
@@ -368,24 +356,10 @@ RETREAT PAGE SPECIFIC Styling
 .section-img{
     width: 20%;
 }
-.section-break.retreat{
-    background-image: url("../images/exp-sectionbreak.jpg");
-    height: 300px;
-    background-position: center;
-    background-size: cover;
+.middle{
+    padding: 40px;
 }
-.subtitle{
-    max-width: 700px;
-    text-align: center;
-    margin: 0 auto;
-    background: #dedede;
-    z-index: 79;
-    bottom: -40px;
-}
-.subtitle h2{
-    padding: 10px;
-}
-.container.retreat h2{
+.middle-text h2{
     text-align: center;
 }
 details {
@@ -399,7 +373,7 @@ details p {
 /*
 ========
 
-STORY PAGE SPECIFIC Styling
+Story Page Specific Styling
 
 ========
 */
@@ -567,10 +541,13 @@ footer p{
     padding: 10px;
 }
 footer img{
-    width: 6%;
+    max-width: 2%;
     padding: 10px;
 }
 @media only screen and (min-width: 320px) {
+    .header{
+        width: 100%;
+    }
     .container{
         width: 100%;
     }
@@ -579,11 +556,31 @@ footer img{
 @media only screen and (min-width: 769px) {
     .columns{
         grid-template-columns: repeat(2, 1fr); /* 2 columns / 1 fraction 50/50 can use 50%*/
+        margin: 0 auto;
     }
     .columns.three{
         grid-template-columns: repeat(3, 1fr);
     }
     .hero-text{
         text-align: left;
+    }
+    .one-column {
+        max-width: 90%;
+    }
+    .gallery-images{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .hero-text{
+        max-width: 1000px;
+    }
+    .intro-text{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+} 
+@media only screen and (min-width: 992px) {
+    .columns{
+        max-width: 1200px;
+        margin: 0 auto;
     }
 } 
