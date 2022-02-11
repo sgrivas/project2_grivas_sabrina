@@ -3,8 +3,8 @@
    padding: 0;
 }
 @font-face {
-    font-family: newyork;
-    src: url(../fonts/NewYork.otf);
+    font-family: sanford;
+    src: url(../fonts/Sanford-0103_demo.ttf);
 }
 body{
     background: white;
@@ -12,7 +12,7 @@ body{
 h1,
 h2,
 h3{
-    font-family: newyork, sans-serif;
+    font-family: sanford, sans-serif;
 }
 p,
 a,
@@ -25,7 +25,7 @@ li{
 }
 h1{
     color: white;
-    font-size: 2.7em;
+    font-size: 3.3em;
     padding-bottom: 30px;
 }
 h2{
@@ -34,7 +34,7 @@ h2{
 }
 h3{
     font-size: 1.4em;
-    padding-bottom: 10px;
+    padding-bottom: 18px;
 }
 ::selection {
     background: #DEDEDE;
@@ -208,6 +208,9 @@ Columns Styling
 .one-column{
     padding: 20px 10px;
 }
+.one-column p{
+    padding-bottom: 10px;
+}
 .view-more-button {
     padding: 0.625em 1.875em;
     border: solid 1px #16160a;
@@ -347,8 +350,7 @@ Retreat Page Specific Styling
     background-color: white;
     padding: 30px;
     box-sizing: border-box;
-    border-radius: 10px;
-    margin: 5px;
+    margin: 10px 0;
 }
 .journey-box img{
     max-width: 25%;
@@ -369,6 +371,20 @@ Retreat Page Specific Styling
 .middle-text h2{
     text-align: center;
 }
+summary:hover {
+    cursor: pointer;
+}
+details > summary {
+    list-style: none;
+  }
+details > summary::-webkit-details-marker {
+    display: none;
+}
+summary::after{
+    content: "\2b";
+    font-family: 'Font Awesome 5 Free';
+    margin-left: 10px;
+}
 details {
     background: #DEDEDE;
     padding: 15px 20px;
@@ -376,6 +392,9 @@ details {
 }
 details p {
     padding: 15px 25px 10px;
+}
+details[open] summary::after {
+    content: "\2d";
 }
 .last{
     background-color: #DEDEDE;
@@ -600,5 +619,11 @@ footer img{
     }
     .slider{
         max-width: 900px;
+    }
+    details{
+        width: 50%;
+    }
+    .journey-box{
+        padding: 45px;
     }
 } 
