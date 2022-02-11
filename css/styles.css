@@ -30,10 +30,11 @@ h1{
 }
 h2{
     font-size: 2em;
-    padding-bottom: 15px;
+    padding: 15px 0px;
 }
 h3{
-    font-size: 1.1em;
+    font-size: 1.4em;
+    padding-bottom: 10px;
 }
 ::selection {
     background: #DEDEDE;
@@ -111,8 +112,8 @@ Nav Styling
 }
 .bars{
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 10px;
+    right: 50px;
     font-size: 60px;
 }
 @media screen and (max-height: 450px) {
@@ -149,7 +150,7 @@ Hero Image Styling
 ========
 */
 .hero-image{
-    background-image: url("../images/home-hero.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/home-hero.jpg");
     height: 640px;
     background-repeat: no-repeat;
     background-position: center; 
@@ -178,12 +179,9 @@ Intro Styling
 ========
 */
 .intro{
-    padding: 40px;
-    background-color: #DEDEDE;
+    padding: 70px;
+    background-color: #F3EEE7;
     text-align: center;
-}
-.intro p{
-    text-align: left;
 }
 /*
 ========
@@ -193,8 +191,12 @@ Columns Styling
 ========
 */
 .columns{
-    margin: 30px 0;
+    margin: 30px auto;
     display: grid;
+}
+.columns.three{
+    max-width: 900px;
+    padding-top: 25px;
 }
 .columns img{
     width: 100%;
@@ -228,12 +230,17 @@ Slider Styling
 
 ========
 */
+.slider {
+    position: relative;
+    margin: 40px auto;
+}
 .slide {
     position: relative;
 }
 .slide-img{
-    height: 100%;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .text-content {
     position: absolute;
@@ -241,6 +248,7 @@ Slider Styling
     bottom: 0px;
     background-color: rgba(22, 22, 10, 0.644);
     color: white;
+    margin: 0 auto;
     padding: 130px 30px;
     text-align: center;
 }
@@ -249,11 +257,7 @@ Slider Styling
     margin: 0 auto;
     padding-bottom: 10px;
 }
-.slider {
-    position: relative;
-    width: 100%;
-    margin: 60px auto;
-}
+
 /* This will style the height of your slider */
 .slick-slider .slick-track {
     height: 500px;
@@ -297,12 +301,12 @@ CTA Card Styling
     padding: 10px 30px;
     display: inline-block;
     text-decoration: none;
-    margin-top: 40px;
     color: white;
     transition: .3s;
+    margin: 20px 0;
 }
 .reserve-button:hover{
-    background: #8aa73d;
+    background: #A64E26;
     transition: .3s;
     color: white;
 }
@@ -359,16 +363,22 @@ Retreat Page Specific Styling
 .middle{
     padding: 40px;
 }
+.middle-text{
+    padding: 20px 0;
+}
 .middle-text h2{
     text-align: center;
 }
 details {
     background: #DEDEDE;
     padding: 15px 20px;
-    margin: 10px 0px;
+    margin: 15px 0px;
 }
 details p {
     padding: 15px 25px 10px;
+}
+.last{
+    background-color: #DEDEDE;
 }
 /*
 ========
@@ -566,6 +576,7 @@ footer img{
     }
     .one-column {
         max-width: 90%;
+        margin: 0 auto;
     }
     .gallery-images{
         grid-template-columns: repeat(3, 1fr);
@@ -573,14 +584,21 @@ footer img{
     .hero-text{
         max-width: 1000px;
     }
-    .intro-text{
+    .intro-text,
+    .middle-text{
         max-width: 800px;
         margin: 0 auto;
+    }
+    .text-content{
+        width: 50%;
     }
 } 
 @media only screen and (min-width: 992px) {
     .columns{
         max-width: 1200px;
         margin: 0 auto;
+    }
+    .slider{
+        max-width: 900px;
     }
 } 

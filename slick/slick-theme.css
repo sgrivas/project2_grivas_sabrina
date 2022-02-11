@@ -23,7 +23,8 @@
     line-height: 0;
 
     position: absolute;
-    bottom: 50%;
+    z-index: 72;
+    bottom: 3.5%;
 
     display: block;
 
@@ -70,7 +71,7 @@
     font-size: 20px;
     line-height: 1;
 
-    opacity: .75;
+    opacity: 100%;
     color: white;
 
     -webkit-font-smoothing: antialiased;
@@ -110,7 +111,7 @@
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←'; 
+    content: '←';
 }
 
 /* Dots */
@@ -122,7 +123,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: 20px;
+    bottom: 25px;
 
     display: block;
 
@@ -164,13 +165,11 @@
     border: 0;
     outline: none;
     background: transparent;
-    
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
 {
     outline: none;
-    
 }
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before
@@ -193,14 +192,14 @@
     content: '•';
     text-align: center;
 
-    opacity: 1;
-    color: white;
+    opacity: 100%;
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: 1;
+    opacity: 100%;
     color: white;
 }
