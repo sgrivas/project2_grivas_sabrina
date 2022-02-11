@@ -1,6 +1,7 @@
 *{
    margin: 0;
    padding: 0;
+   box-sizing: border-box;
 }
 @font-face {
     font-family: sanford;
@@ -100,11 +101,11 @@ Nav Styling
     transition: 0.3s;
   }
   
-  .overlay a:hover, .overlay a:focus {
+.overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
   }
   
-  .overlay .closebtn {
+.overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
@@ -113,7 +114,7 @@ Nav Styling
 .bars{
     position: absolute;
     top: 10px;
-    right: 50px;
+    right: 15px;
     font-size: 60px;
 }
 @media screen and (max-height: 450px) {
@@ -229,60 +230,141 @@ Columns Styling
 /*
 ========
 
-Slider Styling
+Slideshow Styling
 
 ========
 */
-.slider {
+.slideshow{
+    padding: 40px 0;
+    background-color: #F3EEE7;
+}
+.white-background{
+    background-color: white;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
     position: relative;
-    margin: 40px auto;
-}
-.slide {
-    position: relative;
-}
-.slide-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.text-content {
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    background-color: rgba(22, 22, 10, 0.644);
+    bottom: 3%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
     color: white;
-    margin: 0 auto;
-    padding: 130px 30px;
-    text-align: center;
-}
-.slide .text-content img{
-    max-width: 10%;
-    margin: 0 auto;
-    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
-/* This will style the height of your slider */
-.slick-slider .slick-track {
-    height: 500px;
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
-.text-overlay {
-    position: absolute;
-    margin: 0 auto;
-    padding: 50px;
-    color: white;
+.high{
+    bottom: -20px;
+    border-radius: 0px;
 }
-/* This will style the navigation buttons */
-.slick-prev:before, 
-.slick-next:before {
-    color: white;
+.black{
+      color: black;
 }
-.slick-dots li button:before {
-    font-size: 14px;
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .prev.black:hover, .next.black:hover {
+    background-color: rgba(0, 0, 0, 0.164);
+  }
+  
+  /* Caption text */
+.text {
     color: #16160a;
+    font-size: 15px;
+    padding: 40px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    margin: 0 auto;
+    bottom: 0;
 }
-.slider-name{
-    padding-top: 20px;
+.black-background{
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    bottom: 50px;
 }
+.black-background h2{
+    font-size: 4em;
+    line-height: 0px;
+}
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+.dots{
+    padding-top: 25px;
+}
+.dots-below{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    background-color: white;
+    padding-bottom: 20px;
+}
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 /*
 ========
 
@@ -300,7 +382,7 @@ CTA Card Styling
     text-align: left;
 }
 .reserve-button{
-    background: #16160a;
+    background-color: #A64E26;
     padding: 10px 30px;
     display: inline-block;
     text-decoration: none;
@@ -309,30 +391,10 @@ CTA Card Styling
     margin: 20px 0;
 }
 .reserve-button:hover{
-    background: #A64E26;
+    background: #16160a;
     transition: .3s;
     color: white;
 }
-/*
-========
-
-Lightbox Styling
-
-========
-*/
-.gallery-images{
-    padding: 20px;
-    display: grid;
-}
-.gallery-images img{
-	width: 100%;
-}
-.lb-caption{
-	font-size: 30px !important;
-	color: white;
-	font-family: commuters-sans, sans-serif;
-}
-
 /*
 ========
 
@@ -341,7 +403,7 @@ Retreat Page Specific Styling
 ========
 */
 .hero-image.retreat{
-    background-image: url("../images/retreat-hero.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/retreat-hero.jpg");
 }
 #activities h2{
     text-align: center;
@@ -398,6 +460,10 @@ details[open] summary::after {
 }
 .last{
     background-color: #DEDEDE;
+}
+.last-text{
+    text-align: center;
+    padding-bottom: 30px;
 }
 /*
 ========
@@ -547,6 +613,7 @@ input{
 .datepicker{
     margin-bottom: 60px;
 }
+
 /*
 ========
 
@@ -604,12 +671,16 @@ footer img{
         max-width: 1000px;
     }
     .intro-text,
-    .middle-text{
+    .middle-text,
+    .last-text{
         max-width: 800px;
         margin: 0 auto;
     }
     .text-content{
         width: 50%;
+    }
+    .text-content-2{
+        width: 100%;
     }
 } 
 @media only screen and (min-width: 992px) {
@@ -617,13 +688,16 @@ footer img{
         max-width: 1200px;
         margin: 0 auto;
     }
-    .slider{
-        max-width: 900px;
-    }
     details{
-        width: 50%;
+        width: 75%;
     }
     .journey-box{
         padding: 45px;
+    }
+    .slideshow-container{
+        max-width: 800px;
+    }
+    .dots-below{
+        max-width: 800px;
     }
 } 
