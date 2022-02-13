@@ -65,7 +65,7 @@ Nav Styling
     color: white;
 }
 .logo img{
-    max-width: 3%;
+    max-width: 8%;
 }
 .header.active {
     background: #fff;
@@ -166,7 +166,6 @@ Hero Image Styling
     transform: translate(-50%, -50%);
     color: white;
     animation: fadeIn linear .5s;
-    width: 90%;
 }
 @keyframes fadeIn {
     0% {opacity:0;}
@@ -180,7 +179,7 @@ Intro Styling
 ========
 */
 .intro{
-    padding: 70px;
+    padding: 40px;
     background-color: #F3EEE7;
     text-align: center;
 }
@@ -235,19 +234,18 @@ Slideshow Styling
 ========
 */
 .slideshow{
-    padding: 40px 0;
     background-color: #F3EEE7;
 }
-.white-background{
-    background-color: white;
-}
+
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
   }
-  
+.black{
+    background-color: #16160a;
+}
   /* Hide the images by default */
   .mySlides {
     display: none;
@@ -256,20 +254,18 @@ Slideshow Styling
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
-    position: absolute;
-    bottom: 3%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
-
-  
 /* Position the "next button" to the right */
 .next {
     right: 0;
@@ -278,9 +274,6 @@ Slideshow Styling
 .high{
     bottom: -20px;
     border-radius: 0px;
-}
-.black{
-      color: black;
 }
   
   /* On hover, add a black background color with a little bit see-through */
@@ -293,78 +286,44 @@ Slideshow Styling
   
   /* Caption text */
 .text {
-    color: #16160a;
-    font-size: 15px;
-    padding: 40px;
-    position: absolute;
-    width: 100%;
+    padding: 20px;
     text-align: center;
-    background-color: white;
-    margin: 0 auto;
-    bottom: 0;
-}
-.black-background{
-    background-color: rgba(0,0,0,0.4);
+    background-color: #16160a;
     color: white;
-    bottom: 50px;
-}
-.black-background h2{
-    font-size: 4em;
-    line-height: 0px;
 }
   
   /* Number text (1/3 etc) */
   .numbertext {
     color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
   }
   
   /* The dots/bullets/indicators */
 .dots{
-    padding-top: 25px;
-}
-.dots-below{
     text-align: center;
     margin: 0 auto;
     display: block;
-    background-color: white;
-    padding-bottom: 20px;
+    padding: 10px;
+    max-width: 1000px;
 }
   .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
   }
   
   .active, .dot:hover {
     background-color: #717171;
   }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+
 /*
 ========
 
@@ -415,7 +374,7 @@ Retreat Page Specific Styling
     margin: 10px 0;
 }
 .journey-box img{
-    max-width: 25%;
+    max-width: 15%;
 }
 .journey-box li{
     text-align: left;
@@ -463,7 +422,7 @@ details[open] summary::after {
 }
 .last-text{
     text-align: center;
-    padding-bottom: 30px;
+    padding: 20px 0;
 }
 /*
 ========
@@ -629,15 +588,17 @@ footer{
     text-align: center;
     padding: 20px 0;
 }
-footer h2{
-    font-size: 1.31em;
+footer a{
+    font-size: .78em;
+    text-decoration: none;
+    color: white;
 }
 footer p{
     font-size: .78em;
     padding: 10px;
 }
 footer img{
-    max-width: 2%;
+    max-width: 8%;
     padding: 10px;
 }
 @media only screen and (min-width: 320px) {
@@ -682,6 +643,19 @@ footer img{
     .text-content-2{
         width: 100%;
     }
+    footer img,
+    .logo img{
+        max-width: 5%;
+    }
+    .journey-box img{
+        max-width: 20%;
+    }
+    .prev, .next{
+        top: 70%;
+    }
+    .slideshow-container{
+        max-width: 700px;
+    }
 } 
 @media only screen and (min-width: 992px) {
     .columns{
@@ -697,7 +671,11 @@ footer img{
     .slideshow-container{
         max-width: 800px;
     }
-    .dots-below{
-        max-width: 800px;
+    footer img,
+    .logo img{
+        max-width: 3%;
+    }
+    .journey-box img{
+        max-width: 25%;
     }
 } 
