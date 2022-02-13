@@ -1,8 +1,53 @@
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+========
+
+Universal Styling
+
+========
+*/
 @font-face {
     font-family: sanford;
     src: url(../fonts/Sanford-0103_demo.ttf);
@@ -54,6 +99,7 @@ Nav Styling
     transition: all 0.2s ease-in-out;
     background-color: transparent;  
     top: 0;
+    width: 100%;
 }
 .logo {
     width: 100%;
@@ -65,13 +111,20 @@ Nav Styling
     color: white;
 }
 .logo img{
-    max-width: 8%;
+    max-width: 10%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 .header.active {
     background: #fff;
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+.header.active span{
+    color: black;
+}
+.header.active img{
+    filter: none;
 }
 .overlay {
     height: 0%;
@@ -95,53 +148,39 @@ Nav Styling
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 2.25em;
     color: #818181;
     display: block;
     transition: 0.3s;
-  }
+}
   
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
-  }
+}
   
 .overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
-    font-size: 60px;
+    font-size: 3.75em;
 }
 .bars{
     position: absolute;
     top: 10px;
     right: 15px;
-    font-size: 60px;
+    font-size: 3.75em;
+    color: white;
+    font-size: 1.875em;
+    cursor: pointer;
 }
 @media screen and (max-height: 450px) {
     .overlay {overflow-y: auto;}
-    .overlay a {font-size: 20px}
+    .overlay a {font-size: 1.25em}
     .overlay .closebtn {
-    font-size: 40px;
+    font-size: 2.5em;
     top: 15px;
     right: 35px;
     }
-}
-.second-nav{
-    padding: 20px 40px;
-    background: #DEDEDE;
-}
-.second-nav li{
-    display: inline-block;
-}
-.second-nav a{
-    color: #16160a;
-    text-decoration: none;
-    padding-right: 60px;
-    transition: .3s;
-}
-.second-nav a:hover{
-    color: #8aa73d;
-    transition: .3s;
 }
 /*
 ========
@@ -234,7 +273,12 @@ Slideshow Styling
 ========
 */
 .slideshow{
+    background-color: white;
+    padding: 40px 0;
+}
+.slideshow-2{
     background-color: #F3EEE7;
+    padding-bottom: 40px;
 }
 
 /* Slideshow container */
@@ -242,14 +286,13 @@ Slideshow Styling
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
-.black{
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
     background-color: #16160a;
 }
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
   
 /* Next & previous buttons */
 .prev, .next {
@@ -261,7 +304,7 @@ Slideshow Styling
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125em;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -276,13 +319,13 @@ Slideshow Styling
     border-radius: 0px;
 }
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-  }
-  .prev.black:hover, .next.black:hover {
+}
+.prev.black:hover, .next.black:hover {
     background-color: rgba(0, 0, 0, 0.164);
-  }
+}
   
   /* Caption text */
 .text {
@@ -291,15 +334,18 @@ Slideshow Styling
     background-color: #16160a;
     color: white;
 }
+.text h2{
+    font-size: 1.3em;
+}
   
-  /* Number text (1/3 etc) */
-  .numbertext {
+/* Number text (1/3 etc) */
+.numbertext {
     color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-  }
+    font-size: 0.75em;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
   
   /* The dots/bullets/indicators */
 .dots{
@@ -309,20 +355,19 @@ Slideshow Styling
     padding: 10px;
     max-width: 1000px;
 }
-  .dot {
+.dot {
     cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
     background-color: #717171;
-  }
+}
 
 /*
 ========
@@ -364,9 +409,6 @@ Retreat Page Specific Styling
 .hero-image.retreat{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/retreat-hero.jpg");
 }
-#activities h2{
-    text-align: center;
-}
 .journey-box{
     background-color: white;
     padding: 30px;
@@ -380,14 +422,8 @@ Retreat Page Specific Styling
     text-align: left;
     padding: 5px;
 }
-.section-img{
-    width: 20%;
-}
-.middle{
-    padding: 40px;
-}
 .middle-text{
-    padding: 20px 0;
+    padding: 10px;
 }
 .middle-text h2{
     text-align: center;
@@ -422,7 +458,7 @@ details[open] summary::after {
 }
 .last-text{
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 10px;
 }
 /*
 ========
@@ -451,7 +487,9 @@ Story Page Specific Styling
     text-align: center;
 }
 /*=====
+
 Flip Card Styling
+
 =====*/
 .flip-card{
     width: 280px;
@@ -520,7 +558,7 @@ input{
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #16160a;
     opacity: 1; /* Firefox */
-    font-size: 16px;
+    font-size: 1em;
     font-family: commuters-sans, sans-serif;
 }
 .reserve-form p{
@@ -547,7 +585,7 @@ input{
     margin: 0 auto;
     text-align: center;
     font-family: commuters-sans, sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     transition: .3s;
     margin: 40px 0px;
 }
@@ -598,15 +636,24 @@ footer p{
     padding: 10px;
 }
 footer img{
-    max-width: 8%;
+    max-width: 12%;
     padding: 10px;
 }
-@media only screen and (min-width: 320px) {
-    .header{
-        width: 100%;
+/*
+========
+
+Media Queries Styling
+
+========
+*/
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    footer img,
+    .logo img{
+        max-width: 6%;
     }
-    .container{
-        width: 100%;
+    .prev, .next{
+        top: 50%;
     }
 }
 /* Medium devices (landscape tablets, 769px and up) */
@@ -618,18 +665,12 @@ footer img{
     .columns.three{
         grid-template-columns: repeat(3, 1fr);
     }
-    .hero-text{
-        text-align: left;
-    }
     .one-column {
         max-width: 90%;
         margin: 0 auto;
     }
     .gallery-images{
         grid-template-columns: repeat(3, 1fr);
-    }
-    .hero-text{
-        max-width: 1000px;
     }
     .intro-text,
     .middle-text,
@@ -651,12 +692,13 @@ footer img{
         max-width: 20%;
     }
     .prev, .next{
-        top: 70%;
+        top: 60%;
     }
     .slideshow-container{
         max-width: 700px;
     }
 } 
+/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .columns{
         max-width: 1200px;
@@ -673,9 +715,16 @@ footer img{
     }
     footer img,
     .logo img{
-        max-width: 3%;
+        max-width: 4%;
     }
     .journey-box img{
         max-width: 25%;
     }
 } 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    footer img,
+    .logo img{
+        max-width: 3%;
+    }
+}
