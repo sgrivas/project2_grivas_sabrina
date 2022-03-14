@@ -467,9 +467,8 @@ Story Page Specific Styling
 
 ========
 */
-.hero-image-section.story{
-    background-image: url("../images/story-hero.jpg");
-    height: 650px;
+.hero-image.story{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/story-hero.jpg");
 }
 .section-break.story{
     background-image: url("../images/tran-sectionbreak.jpg");
@@ -533,19 +532,22 @@ RESERVE PAGE SPECIFIC Styling
 
 ========
 */
-.hero-image-section.reserve{
-    background-image: url("../images/reserve-hero.jpg");
+.hero-image.reserve{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/reserve-hero.jpg");
+}
+.reserve-body{
+    background-color: #F3EEE7;
+    padding: 40px;
 }
 .reserve-form{
-    padding: 0px 0px;
-    margin: 0px auto 50px;
+    margin: 0 auto;
 }
 .input-section{
     margin-bottom: 40px;
     font-family: commuters-sans, sans-serif;
 }
 input{
-    padding: 10px 50px 10px 10px;
+    padding: 10px;
     margin: 0px 5px;
     border: solid 1px #dedede;
 }
@@ -554,6 +556,9 @@ input{
 .email,
 .telephone{
     display: inline;
+}
+.email{
+    clear: both;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #16160a;
@@ -567,8 +572,8 @@ input{
 .none label{
     display: none;
 }
-.container.reserve h2{
-    padding-bottom: 0px;
+.radio{
+    padding: 7px;
 }
 .question{
     margin-top: 20px;
