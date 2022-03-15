@@ -470,9 +470,8 @@ Story Page Specific Styling
 .hero-image.story{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/story-hero.jpg");
 }
-.section-break.story{
-    background-image: url("../images/tran-sectionbreak.jpg");
-    margin-bottom: 60px;
+.tranquillum{
+    display: flex;
 }
 .container.guides{
     text-align: center;
@@ -484,6 +483,25 @@ Story Page Specific Styling
 }
 .gallery.story h3{
     text-align: center;
+}
+.holder {
+    position: relative; 
+    max-width: 30%; /* Maximum width */
+    margin: 0 auto; /* Center it */
+  }
+.holder img{
+    width: 100%;
+}
+  
+.holder .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+    box-sizing: border-box;
 }
 /*=====
 
