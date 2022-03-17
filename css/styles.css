@@ -226,6 +226,8 @@ Intro Styling
 .intro{
     padding: 40px;
     background-color: #F3EEE7;
+}
+.intro-text{
     text-align: center;
 }
 /*
@@ -429,6 +431,9 @@ Retreat Page Specific Styling
     text-align: left;
     padding: 5px;
 }
+.middle{
+    padding: 40px 0;
+}
 .middle-text{
     padding: 10px;
 }
@@ -480,7 +485,7 @@ Story Page Specific Styling
 .tranquillum{
     display: grid;
     padding: 20px;
-    gap: 10px;
+    gap: 20px;
 }
 .container.guides{
     text-align: center;
@@ -705,6 +710,7 @@ Media Queries Styling
     }
     .columns.three{
         grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
     .tranquillum{
         grid-template-columns: repeat(3, 1fr);
@@ -748,7 +754,7 @@ Media Queries Styling
         max-width: 1200px;
         margin: 0 auto;
     }
-    details{
+    .grey details{
         width: 75%;
     }
     .journey-box{
