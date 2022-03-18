@@ -234,6 +234,23 @@ Intro Styling
 /*
 ========
 
+Middle Styling
+
+========
+*/
+.middle{
+    padding: 40px 0;
+}
+.middle-text{
+    padding: 20px 10px;
+    text-align: center;
+}
+.middle-text h2{
+    text-align: center;
+}
+/*
+========
+
 Columns Styling
 
 ========
@@ -382,19 +399,10 @@ Slideshow Styling
 /*
 ========
 
-CTA Card Styling
+Button Styling
 
 ========
 */
-.cta-card{
-    background: #dedede;
-    padding: 40px 10px;    
-    z-index: 79;
-    text-align: center;
-}
-.cta-card p{
-    text-align: left;
-}
 .reserve-button{
     background-color: #A64E26;
     padding: 10px 30px;
@@ -412,42 +420,16 @@ CTA Card Styling
 /*
 ========
 
-Retreat Page Specific Styling
+Details/Summary Tag Specific Styling
 
 ========
 */
-.hero-image.retreat{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/retreat-hero.jpg");
-}
-.journey-box{
-    background-color: white;
-    padding: 30px;
-    box-sizing: border-box;
-    margin: 10px 0;
-}
-.journey-box img{
-    max-width: 15%;
-}
-.journey-box li{
-    text-align: left;
-    padding: 5px;
-}
-.middle{
-    padding: 40px 0;
-}
-.middle-text{
-    padding: 20px 10px;
-    text-align: center;
-}
-.middle-text h2{
-    text-align: center;
-}
 summary:hover {
     cursor: pointer;
 }
 details > summary {
     list-style: none;
-  }
+}
 details > summary::-webkit-details-marker {
     display: none;
 }
@@ -467,12 +449,34 @@ details p {
 details[open] summary::after {
     content: "\2d";
 }
-.last{
-    background-color: #DEDEDE;
+/*
+========
+
+Retreat Page Specific Styling
+
+========
+*/
+.hero-image.retreat{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/retreat-hero.jpg");
 }
-.last-text{
+.journey-box{
+    background-color: white;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+.journey-box img{
+    max-width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.journey-box h3{
     text-align: center;
-    padding: 40px 10px;
+}
+.journey-box li{
+    text-align: left;
+    padding: 5px;
 }
 /*
 ========
@@ -656,7 +660,11 @@ input[type=reset]:hover{
     margin-bottom: 60px;
 }
 /*
-Fade In
+=======
+
+Fade In Effect Styling
+
+=======
 */
 .fadein{
     opacity: 0;
