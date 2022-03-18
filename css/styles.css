@@ -229,6 +229,7 @@ Intro Styling
 }
 .intro-text{
     text-align: center;
+    padding: 20px 10px;
 }
 /*
 ========
@@ -435,7 +436,8 @@ Retreat Page Specific Styling
     padding: 40px 0;
 }
 .middle-text{
-    padding: 10px;
+    padding: 20px 10px;
+    text-align: center;
 }
 .middle-text h2{
     text-align: center;
@@ -487,11 +489,6 @@ Story Page Specific Styling
     padding: 20px;
     gap: 20px;
 }
-.container.guides{
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 0px;
-}
 .text-content.story{
     padding: 170px 30px;
 }
@@ -505,7 +502,9 @@ Story Page Specific Styling
 .holder img{
     width: 100%;
 }
-  
+.guides{
+    text-align: center;
+}
 .holder .content {
     position: absolute; /* Position the background text */
     bottom: 0; /* At the bottom. Use top:0 to append it to the top */
@@ -656,7 +655,16 @@ input[type=reset]:hover{
 .datepicker{
     margin-bottom: 60px;
 }
-
+/*
+Fade In
+*/
+.fadein{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+.fadein.appear{
+    opacity: 1;
+}
 /*
 ========
 

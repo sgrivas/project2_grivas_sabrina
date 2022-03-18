@@ -67,3 +67,27 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+const appearOptions = {
+  threshold: .5
+};
+
+const faders = document.querySelectorAll('.fadein');
+const appearOnScroll = new IntersectionObserver
+  (function(
+    entries,
+    appearOnScroll
+  ) {
+    entries.forEach(entry =>{
+      if (!entry.isIntersecting){
+        return;
+      } else{
+        entry.target.classList.add('appear');
+        appearOnScroll.unobserve(entry.target);
+      }
+    })
+  }, 
+appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+})
