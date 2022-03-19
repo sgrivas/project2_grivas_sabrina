@@ -302,6 +302,9 @@ Slideshow Styling
     background-color: white;
     padding: 40px 0;
 }
+.slideshow-container img{
+    max-width: 100%;
+}
 .slideshow-2{
     background-color: #F3EEE7;
     padding-bottom: 40px;
